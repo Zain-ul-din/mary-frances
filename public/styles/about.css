@@ -27,7 +27,7 @@ main > div {
 }
 
 .pattern-x {
-  background-image: url(/public/assets/pattern.png);
+  background-image: url(/assets/pattern.png);
   height: 1rem;
   width: 100%;
   background-size: 3.5%;
@@ -68,7 +68,7 @@ footer img {
 }
 
 footer > div {
-  background-image: url(/public/assets/pattern.png);
+  background-image: url(/assets/pattern.png);
   width: 1rem;
   background-size: contain;
 }
