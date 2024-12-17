@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes - Mary Frances</title>
+
+    <!-- fonts -->
+    <link
+      href="https://db.onlinewebfonts.com/c/e8d71065d7e695375e18b476338f42b1?family=Vertrina+W01+Regular"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/recipes.css" />
+  </head>
+  <body>
+    <header style="--header-padding: 0rem 1rem 1rem 1rem">
+      <nav>
+        <a href="/public/index.html">
+          <img
+            src="assets/hero-img.svg"
+            alt="Marry Frances"
+            width="120"
+            height="120"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/public/about.html">about</a>
+          </li>
+          <li>
+            <a href="/public/recipes.html" class="active-link">recipes</a>
+          </li>
+          <li>
+            <a href="/public/quiz.html">quiz</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <img
+        src="assets/cook-book.png"
+        alt="cook book"
+        width="600"
+        height="183"
+      />
+
+      <div class="filter">
+        Filter By:
+        <div class="tab">
+          <span class="tab-item" data-status="active">Difficulty</span>
+          <span class="tab-item" data-status="disable">speed</span>
+          <span class="tab-item" data-status="disable">meal</span>
+        </div>
+      </div>
+
+      <div class="sections-wrapper">
+        <section>
+          <header class="cards-header">
+            <h2>EASY RECIPES</h2>
+            <div style="background: url(/public/assets/pattern.png)"></div>
+          </header>
+
+          <div class="cards">
+            <div>
+              <div>
+                <img src="/public/assets/butter-toast.png" alt="butter-toast" />
+              </div>
+              <h3>Butter toast</h3>
+              <span>
+                <span class="badge">easy</span>
+              </span>
+            </div>
+            <div>
+              <div>
+                <img
+                  src="/public/assets/quiz-task.png"
+                  alt="Jacket-Boiled Potatoes"
+                />
+              </div>
+              <h3>Jacket-Boiled Potatoes</h3>
+              <span>
+                <span class="badge">easy</span>
+              </span>
+            </div>
+            <div>
+              <div>
+                <img src="/public/assets/boiled-eggs.png" alt="boiled eggs" />
+              </div>
+              <h3>Boiled Eggs</h3>
+              <span>
+                <span class="badge">easy</span>
+              </span>
+            </div>
+          </div>
+          <span style="margin-left: auto">
+            <button>more</button>
+          </span>
+        </section>
+
+        <section>
+          <header class="cards-header">
+            <h2>MEDIUM RECIPES</h2>
+            <div style="background: url(/public/assets/pattern.png)"></div>
+          </header>
+
+          <div class="cards">
+            <div>
+              <div>
+                <img src="/public/assets/omelet.png" alt="Omelet" />
+              </div>
+              <h3>Omelet</h3>
+              <span>
+                <span class="badge badge-blue">medium</span>
+              </span>
+            </div>
+            <div>
+              <div>
+                <img src="/public/assets/baked-apple.png" alt="baked apple" />
+              </div>
+              <h3>Baked Apples</h3>
+              <span>
+                <span class="badge badge-blue">easy</span>
+              </span>
+            </div>
+            <div>
+              <div>
+                <img
+                  src="/public/assets/biscuits.png"
+                  alt="baking powder biscuits"
+                />
+              </div>
+              <h3>Baking Powder Biscuits</h3>
+              <span>
+                <span class="badge badge-blue">easy</span>
+              </span>
+            </div>
+          </div>
+
+          <span style="margin-left: auto">
+            <button>more</button>
+          </span>
+        </section>
+
+        <section>
+          <header class="cards-header">
+            <h2>HARD RECIPES</h2>
+            <div style="background: url(/public/assets/pattern.png)"></div>
+          </header>
+
+          <div class="cards">
+            <div>
+              <div>
+                <img src="/public/assets/hearts.png" alt="hearts tarts" />
+              </div>
+              <h3>Queen of Hearts Tarts</h3>
+              <span>
+                <span class="badge badge-brown">easy</span>
+              </span>
+            </div>
+            <div>
+              <div>
+                <img src="/public/assets/bread.png" alt="Bread pudding" />
+              </div>
+              <h3>Bread Pudding</h3>
+              <span>
+                <span class="badge badge-brown">easy</span>
+              </span>
+            </div>
+            <div>
+              <div>
+                <img src="/public/assets/ginger-bread.png" alt="boiled eggs" />
+              </div>
+              <h3>Gingerbread Cookies</h3>
+              <span>
+                <span class="badge badge-brown">easy</span>
+              </span>
+            </div>
+          </div>
+          <span style="margin-left: auto">
+            <button>more</button>
+          </span>
+        </section>
+      </div>
+    </main>
+
+    <script src="/public/scripts/recipes.js" />
+  </body>
+</html>

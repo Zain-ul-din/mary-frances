@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes - Mary Frances</title>
+
+    <!-- fonts -->
+    <link
+      href="https://db.onlinewebfonts.com/c/e8d71065d7e695375e18b476338f42b1?family=Vertrina+W01+Regular"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/quiz.css" />
+  </head>
+  <body>
+    <header style="--header-padding: 0rem 1rem 1rem 1rem">
+      <nav>
+        <a href="/public/index.html">
+          <img
+            src="assets/hero-img.svg"
+            alt="Marry Frances"
+            width="120"
+            height="120"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/public/about.html">about</a>
+          </li>
+          <li>
+            <a href="/public/recipes.html">recipes</a>
+          </li>
+          <li>
+            <a href="/public/quiz.html" class="active-link">quiz</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="question">
+        <h2>Don’t know what to cook?</h2>
+        <p>Mary Frances and her friends can help!</p>
+      </section>
+
+      <section class="quiz hidden">
+        <h2>1. How much kitchen experience do you have?</h2>
+
+        <div>
+          <div>
+            <img
+              src="/public/assets/not-much.png"
+              alt="He pretended to be asleep"
+            />
+            <h3>Not much</h3>
+          </div>
+          <div>
+            <img src="/public/assets/medium.png" alt="Medium Experience" />
+            <h3>A little</h3>
+          </div>
+          <div>
+            <img
+              src="/public/assets/looksgood.png"
+              alt="looked pleased and important."
+            />
+            <h3>Quite a lot</h3>
+          </div>
+        </div>
+        <span>
+          <button class="next-btn">Next</button>
+        </span>
+      </section>
+
+      <section class="quiz hidden">
+        <h2>2. How hungry are you?</h2>
+
+        <div>
+          <div>
+            <img
+              src="/public/assets/quiz-jubey.png"
+              alt="lets give it to Jubey."
+            />
+            <h3>Just peckish</h3>
+          </div>
+          <div>
+            <img src="/public/assets/craz-hats.png" alt="This hat's crazy!" />
+            <h3>Pretty Hungry</h3>
+          </div>
+          <div>
+            <img
+              src="/public/assets/hungry-bears.png"
+              alt="Two hungry bears."
+            />
+            <h3>As hungry as two bears</h3>
+          </div>
+        </div>
+        <span>
+          <button class="next-btn">Next</button>
+        </span>
+      </section>
+
+      <section class="quiz hidden">
+        <h2>3. What time of day is it?</h2>
+
+        <div>
+          <div>
+            <img src="/public/assets/morning.png" alt="morning" />
+            <h3>Morning</h3>
+          </div>
+          <div>
+            <img src="/public/assets/noon.png" alt="After noon" />
+            <h3>Afternoon</h3>
+          </div>
+          <div>
+            <img src="/public/assets/evening.png" alt="evening" />
+            <h3>Evening</h3>
+          </div>
+        </div>
+        <span>
+          <button>Submit</button>
+        </span>
+      </section>
+
+      <section class="quiz-task hidden">
+        <span class="back-btn">
+          <svg
+            width="123"
+            height="16"
+            viewBox="0 0 123 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.292653 7.33699C-0.0977322 7.72765 -0.0975046 8.36082 0.293161 8.7512L6.65941 15.1129C7.05007 15.5033 7.68324 15.503 8.07362 15.1124C8.46401 14.7217 8.46378 14.0885 8.07311 13.6982L2.41423 8.04333L8.06905 2.38444C8.45944 1.99378 8.45921 1.36061 8.06854 0.97023C7.67788 0.579846 7.04471 0.580074 6.65433 0.970738L0.292653 7.33699ZM122.999 7L0.999656 7.04384L1.00037 9.04384L122.999 9L122.999 7Z"
+              fill="#CB462A"
+            />
+          </svg>
+          Back
+        </span>
+        <div>
+          <div>
+            <img src="/public/assets/quiz-task.png" alt="quiz task" />
+          </div>
+          <h3>Jacket-Boiled Potatoes</h3>
+        </div>
+      </section>
+    </main>
+
+    <script src="/public/scripts/quiz.js" />
+  </body>
+</html>
