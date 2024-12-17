@@ -51,6 +51,29 @@ main > section {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 1rem;
+}
+
+.label-orange {
+  background-color: var(--orange);
+  color: var(--wheat);
+}
+
+.label-wheat {
+  background-color: var(--wheat);
+  color: var(--blue);
+}
+
+.label-brown {
+  background-color: var(--wheat);
+  color: var(--brown);
 }
 
 main > section > h1 {

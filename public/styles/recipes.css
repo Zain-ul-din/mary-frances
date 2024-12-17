@@ -121,13 +121,6 @@ main > img {
   margin: auto auto;
 }
 
-.badge {
-  background-color: var(--wheat);
-  padding: 0px 6px 6px 6px;
-  font-size: 20px;
-  font-family: "Ubuntu", serif;
-}
-
 .badge-blue {
   background-color: var(--blue);
   color: var(--yellow);
