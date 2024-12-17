@@ -57,15 +57,15 @@
         <h2>1. How much kitchen experience do you have?</h2>
 
         <div>
-          <div class="choice">
+          <div class="choice" data-value="easy">
             <img src="/assets/not-much.png" alt="He pretended to be asleep" />
             <h3>Not much</h3>
           </div>
-          <div class="choice" data-status="active">
+          <div class="choice" data-status="active" data-value="medium">
             <img src="/assets/medium.png" alt="Medium Experience" />
             <h3>A little</h3>
           </div>
-          <div class="choice">
+          <div class="choice" data-value="difficult">
             <img
               src="/assets/looksgood.png"
               alt="looked pleased and important."
@@ -82,15 +82,15 @@
         <h2>2. How hungry are you?</h2>
 
         <div>
-          <div class="choice">
+          <div class="choice" data-value="lengthy">
             <img src="/assets/quiz-jubey.png" alt="lets give it to Jubey." />
             <h3>Just peckish</h3>
           </div>
-          <div class="choice">
+          <div class="choice" data-value="medium">
             <img src="/assets/craz-hats.png" alt="This hat's crazy!" />
             <h3>Pretty Hungry</h3>
           </div>
-          <div class="choice" data-status="active">
+          <div class="choice" data-value="fast" data-status="active">
             <img src="/assets/hungry-bears.png" alt="Two hungry bears." />
             <h3>As hungry as two bears</h3>
           </div>
@@ -104,15 +104,15 @@
         <h2>3. What time of day is it?</h2>
 
         <div>
-          <div class="choice">
+          <div class="choice" data-value="breakfast">
             <img src="/assets/morning.png" alt="morning" />
             <h3>Morning</h3>
           </div class="choice">
-          <div class="choice">
+          <div class="choice" data-value="lunch">
             <img src="/assets/noon.png" alt="After noon" />
             <h3>Afternoon</h3>
           </div>
-          <div class="choice" data-status="active">
+          <div class="choice" data-status="active" data-value="dessert">
             <img src="/assets/evening.png" alt="evening" />
             <h3>Evening</h3>
           </div>
@@ -138,7 +138,7 @@
           </svg>
           Back
         </span>
-        <div>
+        <div class="task">
           <div>
             <img src="/assets/quiz-task.png" alt="quiz task" />
           </div>
@@ -147,6 +147,7 @@
       </section>
     </main>
 
+    <script src="/scripts/global.js"></script>
     <script src="/scripts/quiz.js"></script>
   </body>
 </html>

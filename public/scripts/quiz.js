@@ -3,15 +3,27 @@
   const quizTaskSection = document.querySelector(".quiz-task");
   const resetBtn = document.querySelector(".back-btn");
   const submitBtn = quizSections.at(-1).querySelector("button");
+  const answers = [];
+
+  const populateDefaultAnswers = () => {
+    Array.from(document.querySelectorAll('[data-status="active"]')).forEach(
+      (ele, i) => {
+        const value = ele.getAttribute("data-value");
+        answers[i] = value;
+      }
+    );
+  };
+  populateDefaultAnswers();
 
   let currentQuiz = 0;
 
-  quizSections.forEach((section) => {
+  quizSections.forEach((section, sectionIdx) => {
     const choices = Array.from(section.querySelectorAll(".choice"));
 
     choices.forEach((choice, idx) => {
       choice.onclick = () => {
         choices.forEach((c, i) => {
+          if (i == idx) answers[sectionIdx] = c.getAttribute("data-value");
           c.setAttribute("data-status", i == idx ? "active" : "disable");
         });
       };
@@ -32,6 +44,7 @@
     const para = questionSection.querySelector("p");
     heading.textContent = previousHeadingContent.heading;
     para.textContent = previousHeadingContent.para;
+    populateDefaultAnswers();
   };
 
   resetBtn.onclick = () => {
@@ -68,6 +81,18 @@
 
     heading.textContent = "The results are in!";
     para.textContent = "You should make:";
+
+    const potentialRecipes = answers
+      .map(
+        (category, i) =>
+          recipes[i].find((recipe) => recipe.category === category).cards
+      )
+      .flat();
+    const randomRecipe =
+      potentialRecipes[Math.floor(potentialRecipes.length * Math.random())];
+
+    document.querySelector(".task > h3").textContent = randomRecipe.title;
+    document.querySelector(".task  img").src = randomRecipe.img;
 
     quizTaskSection.classList.remove("hidden");
   };
