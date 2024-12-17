@@ -59,10 +59,12 @@ main {
   opacity: 0;
   animation: scale-up 500ms ease-in-out 50ms forwards;
   gap: 1rem;
+  cursor: pointer;
 }
 
-.quiz > div div:nth-child(3) {
+.quiz > div div[data-status="active"] {
   background-color: var(--orange);
+  transition: all 300ms;
 }
 
 .quiz > div img {

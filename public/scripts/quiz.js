@@ -6,6 +6,18 @@
 
   let currentQuiz = 0;
 
+  quizSections.forEach((section) => {
+    const choices = Array.from(section.querySelectorAll(".choice"));
+
+    choices.forEach((choice, idx) => {
+      choice.onclick = () => {
+        choices.forEach((c, i) => {
+          c.setAttribute("data-status", i == idx ? "active" : "disable");
+        });
+      };
+    });
+  });
+
   const previousHeadingContent = {
     para: undefined,
     heading: undefined
