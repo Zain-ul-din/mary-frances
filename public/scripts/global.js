@@ -31,17 +31,17 @@ const recipes = [
         {
           title: "Omelet",
           link: links["Omelet"],
-          label: "easy",
+          label: "medium",
           img: "/assets/omelet.png"
         },
         {
           title: "Baked Apples",
-          label: "easy",
+          label: "medium",
           img: "/assets/baked-apple.png"
         },
         {
           title: "Baking Powder Biscuits",
-          label: "easy",
+          label: "medium",
           img: "/assets/biscuits.png"
         }
       ]
